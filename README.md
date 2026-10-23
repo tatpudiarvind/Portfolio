@@ -20,6 +20,10 @@ Create an optimized production build with:
 npm run build
 ```
 
+## Free hosting (GitHub Pages)
+
+Pushing to `main` runs `.github/workflows/deploy.yml`, which builds the site with `--base-href /Portfolio/` and publishes it at `https://tatpudiarvind.github.io/Portfolio/`. In the repository, set **Settings → Pages → Source** to **GitHub Actions** once.
+
 ## Before publishing
 
 Follow `PLAN.md` to replace clearly marked contact placeholders, verify employment details, and add only approved links, metrics, and images. The current case-processing feature is deliberately labeled as in progress.
