@@ -1,0 +1,291 @@
+    <!--
+      THESIS: Put Arvind's engineering work at the center, not a conventional profile card or skills-first landing page.
+      OWN-WORLD: Near-black canvas, fine starfield and hatched edges, lavender-blue signals, restrained rules, and editorial display type.
+      STORY: Visitors understand the healthcare, AI, and backend focus, inspect real project context, distinguish current work, and reach out.
+      FIRST VIEWPORT: Centered two-line promise, original case-processing flow, name and short introduction, status tiles, then two clear actions.
+      FORM: Experience-led portfolio; reference-inspired centered narrative and project-first scroll, rebuilt with original content and visual evidence.
+    -->
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="wordmark" href="#top" aria-label="Arvind Tatpudi, home">AT<span>.</span></a>
+      <nav aria-label="Main navigation">
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Toolkit</a>
+      </nav>
+      <a class="header-action" href="#contact">Let’s talk <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main id="main">
+      <section class="hero shell" id="top" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="hero-kicker">SOFTWARE ENGINEER <span>·</span> HEALTHCARE <span>·</span> APPLIED AI</p>
+          <h1 id="hero-title">Building systems<br><em>that move work forward.</em></h1>
+
+          <div class="system-panel" aria-label="Schematic flow for a case-processing feature currently in development">
+            <div class="panel-topline">
+              <span>CASE PROCESSING / CURRENT BUILD</span>
+              <span class="panel-state"><i></i> In progress</span>
+            </div>
+            <div class="flow-route">
+              <div class="flow-step"><span>01 / CLIENT</span><b>Angular UI</b><small>Submit a case</small></div>
+              <span class="flow-arrow" aria-hidden="true">→</span>
+              <div class="flow-step flow-step-active"><span>02 / SERVICE</span><b>Go API</b><small>Validate · enqueue</small></div>
+              <span class="flow-arrow" aria-hidden="true">→</span>
+              <div class="flow-step"><span>03 / QUEUE</span><b>SQL-backed</b><small>Hold pending work</small></div>
+              <span class="flow-arrow" aria-hidden="true">→</span>
+              <div class="flow-step"><span>04 / WORKER</span><b>Process</b><small>Run on Kubernetes</small></div>
+            </div>
+            <p class="panel-caption">A schematic view of the feature flow · progress returns to the interface as work advances</p>
+          </div>
+
+          <p class="hero-name">Arvind Tatpudi</p>
+          <p class="hero-intro">I build healthcare software, applied AI tools, and backend systems—turning complex workflows into dependable, useful products.</p>
+
+          <div class="status-grid">
+            <div class="status-tile">
+              <span class="status-label"><i class="status-dot status-dot-lilac"></i> EXPERIENCE</span>
+              <b>Siemens Healthineers</b>
+              <small>Healthcare software · C# / .NET</small>
+            </div>
+            <div class="status-tile">
+              <span class="status-label"><i class="status-dot status-dot-blue"></i> BUILDING</span>
+              <b>Case-processing feature</b>
+              <small>Go · Kubernetes · Helm · Docker</small>
+            </div>
+          </div>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">Explore projects <span aria-hidden="true">↓</span></a>
+            <a class="button button-secondary" href="#contact">Start a conversation <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="work-section section shell" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">PROJECTS</p>
+            <h2 id="projects-title">Engineering work,<br><em>in practice.</em></h2>
+          </div>
+          <p class="section-aside">Explore selected work across healthcare software, application modernization, applied AI, developer tools, and workflow automation.</p>
+        </div>
+
+        <article class="case-study case-featured">
+          <div class="case-meta"><span>IN PROGRESS / BACKEND SYSTEMS</span><span class="status status-progress">Current build</span></div>
+          <div class="case-grid">
+            <div class="case-copy">
+              <h3>From case request<br>to <em>asynchronous work.</em></h3>
+              <p class="case-summary">Implementing a feature that takes a case from a web request through a queued workflow and background processing.</p>
+              <details class="case-details" (toggle)="syncDisclosure($event)">
+                <summary aria-expanded="false">Read the implementation path <span aria-hidden="true" data-disclosure-indicator>＋</span></summary>
+                <div class="details-body">
+                  <p>The web UI sends a case request to a Go API, which validates it and adds work to a SQL-backed queue. A background worker coordinates a processing host and an orchestration service; progress updates return to the interface through a streaming endpoint.</p>
+                  <p>Docker packages the application, while Kubernetes runs the service and Helm manages its deployment configuration.</p>
+                  <p class="truth-note">This feature is actively being implemented; no completion or production outcome is claimed.</p>
+                </div>
+              </details>
+            </div>
+            <div class="workflow-figure" aria-label="Schematic request lifecycle: Angular UI, Go API, SQL-backed queue, background worker, and Kubernetes deployment">
+              <div class="workflow-head"><span>REQUEST LIFECYCLE</span><span>SCHEMATIC</span></div>
+              <div class="workflow-node"><span class="node-type">CLIENT</span><b>Angular UI</b><small>Case submitted</small></div>
+              <div class="workflow-connector"><span></span><small>Authenticated request</small></div>
+              <div class="workflow-node node-active"><span class="node-type">API</span><b>Go service</b><small>Validate · enqueue</small></div>
+              <div class="workflow-connector"><span></span><small>SQL-backed queue</small></div>
+              <div class="workflow-node"><span class="node-type">WORKER</span><b>Background engine</b><small>Coordinate · process</small></div>
+              <div class="workflow-return"><span>Progress updates return to the UI as work advances</span><b aria-hidden="true">↶</b></div>
+              <div class="workflow-foot"><span>DEPLOYMENT</span><b>Docker · Helm · Kubernetes</b></div>
+            </div>
+          </div>
+          <div class="tag-row"><span>Go</span><span>Kubernetes</span><span>Helm</span><span>Docker</span><span>Queued workflows</span><span>Service integration</span></div>
+        </article>
+
+        <div class="case-pair">
+          <article class="case-study">
+            <div class="case-meta"><span>SIEMENS HEALTHINEERS · HEALTHCARE</span><span class="status status-live">Production experience</span></div>
+            <h3>Medical imaging<br>&amp; <em>printing.</em></h3>
+            <p class="case-summary">Developed healthcare-software features for imaging and printing workflows using C#/.NET, WPF, and Angular.</p>
+            <details class="case-details" (toggle)="syncDisclosure($event)">
+              <summary aria-expanded="false">What I worked on <span aria-hidden="true" data-disclosure-indicator>＋</span></summary>
+              <div class="details-body">
+                <p>Implemented print views and workflows, prototyped client-side printing, and added independent and relative zoom controls for medical-image segments. Also contributed to multi-monitor support.</p>
+                <p>Contributed to a production healthcare device-data integration and developed unit, integration, and end-to-end tests across projects.</p>
+              </div>
+            </details>
+            <div class="tag-row"><span>C#</span><span>.NET</span><span>WPF</span><span>Angular</span><span>Medical imaging</span></div>
+          </article>
+
+          <article class="case-study case-ai">
+            <div class="case-meta"><span>HAPPIEST MINDS · APPLIED AI</span><span class="status status-live">Built</span></div>
+            <h3>Knowledge,<br><em>made findable.</em></h3>
+            <p class="case-summary">An enterprise RAG assistant that combines retrieval and semantic search to help people find relevant information in internal knowledge sources.</p>
+            <details class="case-details" (toggle)="syncDisclosure($event)">
+              <summary aria-expanded="false">What the system brings together <span aria-hidden="true" data-disclosure-indicator>＋</span></summary>
+              <div class="details-body">
+                <p>The solution uses embeddings and a vector database to retrieve context for responses. The experience is designed around grounded answers rather than a standalone chatbot prompt.</p>
+                <p>Specific evaluation results, adoption figures, and public links are intentionally omitted until verified and approved for sharing.</p>
+              </div>
+            </details>
+            <div class="tag-row"><span>RAG</span><span>Semantic search</span><span>Embeddings</span><span>Vector database</span></div>
+          </article>
+        </div>
+
+        <div class="case-pair">
+          <article class="case-study">
+            <div class="case-meta"><span>HAPPIEST MINDS · APPLICATION MODERNIZATION</span><span class="status status-live">Delivered</span></div>
+            <h3>From desktop<br>to <em>web.</em></h3>
+            <p class="case-summary">Migrated a Windows application to a web-based platform, bringing its workflows to an Angular interface backed by ASP.NET Web API.</p>
+            <div class="tag-row"><span>Angular 13</span><span>ASP.NET Web API</span><span>WPF</span><span>MVVM</span></div>
+          </article>
+
+          <article class="case-study">
+            <div class="case-meta"><span>OPTION MATRIX · WORKFLOW AUTOMATION</span><span class="status status-live">Delivered</span></div>
+            <h3>Audit and response<br><em>workflows.</em></h3>
+            <p class="case-summary">Built audit and response-management workflows for a career-consulting and immigration business, including mobile checklists and scheduled ticketing.</p>
+            <div class="tag-row"><span>C#</span><span>ASP.NET Web API</span><span>SQL Server</span><span>Angular</span><span>IIS</span></div>
+          </article>
+        </div>
+
+        <article class="case-study case-wide">
+          <div class="case-meta"><span>SIEMENS HEALTHINEERS · DEVELOPER EXPERIENCE</span><span class="status status-live">Built</span></div>
+          <div class="case-wide-grid">
+            <h3>Tools for useful<br><em>AI-assisted work.</em></h3>
+            <div>
+              <p class="case-summary">Developed MCP-based defect-analysis and review agents using semantic search, prompt guardrails, and tool-based workflows to assist engineering investigations and code reviews.</p>
+              <div class="tag-row"><span>MCP</span><span>AI agents</span><span>Tool contracts</span><span>Prompt guardrails</span></div>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="experience-section section shell" id="experience" aria-labelledby="experience-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">EXPERIENCE</p>
+            <h2 id="experience-title">Built for<br><em>real-world workflows.</em></h2>
+          </div>
+          <p class="section-aside">Experience across healthcare software, application modernization, and workflow automation.</p>
+        </div>
+        <div
+          class="experience-carousel"
+          role="region"
+          aria-label="Career experience"
+          aria-roledescription="carousel"
+          (mouseenter)="isExperienceHovered = true"
+          (mouseleave)="isExperienceHovered = false"
+          (focusin)="isExperienceFocused = true"
+          (focusout)="syncExperienceFocus($event)"
+        >
+          <div class="experience-carousel-topline">
+            <span class="experience-carousel-label">CAREER TIMELINE</span>
+            <span class="experience-carousel-count" aria-live="off" aria-atomic="true">
+              {{ activeExperienceIndex + 1 }} / {{ experiences.length }}
+            </span>
+          </div>
+          <div class="experience-slides">
+          @for (experience of experiences; track experience.company; let i = $index) {
+            <article
+              class="experience-entry"
+              role="group"
+              [hidden]="i !== activeExperienceIndex"
+              [attr.aria-label]="experience.company + ' experience'"
+              [attr.aria-roledescription]="'slide ' + (i + 1) + ' of ' + experiences.length"
+            >
+              <div class="experience-label">
+                <span>{{ experience.company }}</span>
+                <span>{{ experience.location }}</span>
+                <span>{{ experience.dates }}</span>
+              </div>
+              <div class="experience-copy">
+                <h3>{{ experience.title }}</h3>
+                <p>{{ experience.summary }}</p>
+                <ul>
+                  @for (responsibility of experience.responsibilities; track responsibility) {
+                    <li>{{ responsibility }}</li>
+                  }
+                </ul>
+              </div>
+            </article>
+          }
+          </div>
+          <div class="experience-carousel-controls">
+            <button
+              class="experience-rotation-toggle"
+              type="button"
+              [attr.aria-label]="isAutoRotationEnabled ? 'Pause automatic rotation' : 'Resume automatic rotation'"
+              [attr.aria-pressed]="isAutoRotationEnabled"
+              (click)="toggleAutoRotation()"
+            >{{ isAutoRotationEnabled ? 'Pause' : 'Resume' }}</button>
+            <div class="experience-carousel-buttons">
+              <button
+                class="experience-arrow"
+                type="button"
+                aria-label="Previous employer"
+                (click)="previousExperience()"
+              >←</button>
+              <button
+                class="experience-arrow"
+                type="button"
+                aria-label="Next employer"
+                (click)="nextExperience()"
+              >→</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="education-section section shell" id="education" aria-labelledby="education-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">EDUCATION</p>
+            <h2 id="education-title">Learning that<br><em>shapes the work.</em></h2>
+          </div>
+          <p class="section-aside">A foundation in mechanical engineering, graduating in 2019.</p>
+        </div>
+        <div class="education-entry">
+          <span class="education-entry-label">2019</span>
+          <p><strong>Bachelor of Engineering Technology, Mechanical Engineering</strong><br>Shri ShankaraCharya Group of Institutions, Bhilai</p>
+        </div>
+      </section>
+
+      <section class="toolkit-section section shell" id="skills" aria-labelledby="skills-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">TOOLKIT</p>
+            <h2 id="skills-title">The tools follow<br><em>the problem.</em></h2>
+          </div>
+          <p class="section-aside">A practical mix of application engineering, service integration, AI, and delivery.</p>
+        </div>
+        <div class="toolkit-list">
+          <div><h3>Application development</h3><p>C# · .NET · ASP.NET Core / Web API · Angular · TypeScript · WPF · MVVM</p></div>
+          <div><h3>Services &amp; data</h3><p>REST APIs · Authenticated integrations · SQL Server · JSON · Queued workflows</p></div>
+          <div><h3>Applied AI</h3><p>RAG · Semantic search · Embeddings · Vector databases · MCP · Prompt guardrails</p></div>
+          <div><h3>Platform &amp; delivery</h3><p>Go · Kubernetes · Helm · Docker · AWS · Azure · IIS · Git · CI/CD · Agile/Scrum</p></div>
+        </div>
+        <p class="toolkit-note">Go, Kubernetes, Helm, and Docker are part of my current implementation work; they are distinguished from longer-established production experience.</p>
+      </section>
+
+      <section class="contact-section shell" id="contact" aria-labelledby="contact-title">
+        <div>
+          <p class="eyebrow">GET IN TOUCH</p>
+          <h2 id="contact-title">Let’s build<br>something <em>dependable.</em></h2>
+          <p>I'm interested in thoughtful engineering work across backend systems, healthcare software, and applied AI.</p>
+        </div>
+        <div class="contact-card">
+          <p class="contact-label">CONTACT DETAILS</p>
+          <p><a href="mailto:tatpudiarvind@gmail.com">tatpudiarvind@gmail.com</a></p>
+          <div class="profile-links" aria-label="Professional profile links">
+            <a href="https://www.linkedin.com/in/arvind-tatpudi-071137120" target="_blank" rel="noopener noreferrer"><span>LinkedIn</span><span>View profile ↗</span></a>
+            <a href="https://github.com/tatpudiarvind" target="_blank" rel="noopener noreferrer"><span>GitHub</span><span>View profile ↗</span></a>
+          </div>
+          <a href="#top" class="button button-primary">Back to the top <span aria-hidden="true">↑</span></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer shell">
+      <span>© <span>{{ year }}</span> Arvind Tatpudi</span>
+      <span>Built around work that holds up.</span>
+      <a href="#top">Return to start ↑</a>
+    </footer>

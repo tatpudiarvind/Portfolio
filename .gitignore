@@ -1,0 +1,5 @@
+/dist/
+/node_modules/
+/.angular/cache/
+/.playwright-mcp/
+/.impeccable/hook.cache.json
