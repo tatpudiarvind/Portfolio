@@ -14,14 +14,15 @@ export class AppComponent implements OnInit, OnDestroy {
       company: "SIEMENS HEALTHINEERS",
       location: "Bengaluru, India",
       dates: "Nov 2024 – Present",
-      title: "Senior Software Developer | C#/.NET",
+      title: "Senior Software Developer",
       summary:
-        "Develops healthcare software across device-data services, medical imaging, printing workflows, and developer tools.",
+        "Builds backend services, delivery pipelines and AI developer tools for healthcare software.",
       responsibilities: [
-        "Key developer on a production healthcare device-data agent that sends registry updates through authenticated APIs.",
-        "Implemented print workflows and medical-image zoom features, and contributed to multi-monitor support.",
-        "Developed MCP-based tools for defect analysis and code review, and automated unit, integration, and end-to-end tests.",
-        "Currently implementing a case-processing feature using Go, Kubernetes, Helm, and Docker.",
+        "Cut code review time by 70% and made defect analysis three times faster for my team, with a Copilot review agent and MCP-based defect analysis tools.",
+        "Shortened release time for a software-distribution service from a day to 40 minutes by co-building five Azure DevOps pipelines through to Kubernetes.",
+        "Raised pipeline pass rate from 65% to 95%+ by root-causing seven classes of build and deploy failure, and lifted the SonarQube security rating from D to A.",
+        "Keep thousands of medical devices current in a cloud registry, delivering 99.5%+ of queued updates, and made key queries 10× faster.",
+        "Building a case-processing feature end to end in Go on Kubernetes (in progress).",
       ],
     },
     {
@@ -30,11 +31,11 @@ export class AppComponent implements OnInit, OnDestroy {
       dates: "Nov 2022 – Nov 2024",
       title: "Senior Software Engineer",
       summary:
-        "Worked across application modernization, enterprise knowledge tools, and touch-interface software.",
+        "Worked on application modernization, enterprise knowledge tools and touch-interface software.",
       responsibilities: [
-        "Migrated a Windows application to a web platform using Angular 13 and ASP.NET Web API.",
-        "Implemented an enterprise knowledge assistant using document processing, RAG, embeddings, and vector search.",
-        "Built touch-interface navigation and integrated WPF middleware components with the MVVM pattern.",
+        "Cut the time to find an answer in 580 administrative and legal documents from 15 minutes to 10 seconds for 1,500 users, with an enterprise RAG assistant.",
+        "Moved a Windows desktop application to the browser for 10,000+ users, migrating 90% of its modules to Angular 13 and ASP.NET Web API; rollouts went from 2 weeks to the same day.",
+        "Built touch-interface navigation that cut steps for core tasks from 13 to 4, and WPF middleware components reused across 8 screens.",
       ],
     },
     {
@@ -43,11 +44,11 @@ export class AppComponent implements OnInit, OnDestroy {
       dates: "Oct 2020 – Nov 2022",
       title: "Software Developer",
       summary:
-        "Developed workflow automation for a career-consulting and immigration business.",
+        "Built workflow automation for an overseas career-consulting and immigration firm.",
       responsibilities: [
-        "Built audit and response-management workflows with C#, ASP.NET Web API, SQL Server, and Angular.",
-        "Implemented mobile checklists and ticketing for negative responses, including scheduled processing and email notifications.",
-        "Supported IIS deployments and resolved defects before release.",
+        "Cut audit turnaround from 4 days to 6 hours with an end-to-end audit automation platform in C#, ASP.NET Web API, SQL Server and Angular.",
+        "Cut audit rework by 30% by digitising checklists and Q&A modules with mobile app integration.",
+        "Brought response to audit exceptions down from 3 days to the same day with automated ticketing and SendGrid alerts, handling 250+ tickets a month.",
       ],
     },
   ] as const;

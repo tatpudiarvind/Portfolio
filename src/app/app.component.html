@@ -1,9 +1,9 @@
     <!--
-      THESIS: Put Arvind's engineering work at the center, not a conventional profile card or skills-first landing page.
+      THESIS: Lead with measured results from Arvind's work, then show the engineering behind each one.
       OWN-WORLD: Near-black canvas, fine starfield and hatched edges, lavender-blue signals, restrained rules, and editorial display type.
-      STORY: Visitors understand the healthcare, AI, and backend focus, inspect real project context, distinguish current work, and reach out.
-      FIRST VIEWPORT: Centered two-line promise, original case-processing flow, name and short introduction, status tiles, then two clear actions.
-      FORM: Experience-led portfolio; reference-inspired centered narrative and project-first scroll, rebuilt with original content and visual evidence.
+      STORY: Visitors see what changed because of his work, inspect how each result was reached and checked, distinguish current work, and reach out.
+      FIRST VIEWPORT: Centered two-line promise, a before-and-after impact ledger, name and short introduction, status tiles, then two clear actions.
+      FORM: Evidence-led portfolio; outcome-first project cards with measured results and progressive detail.
     -->
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header">
@@ -20,44 +20,56 @@
     <main id="main">
       <section class="hero shell" id="top" aria-labelledby="hero-title">
         <div class="hero-copy">
-          <p class="hero-kicker">SOFTWARE ENGINEER <span>·</span> HEALTHCARE <span>·</span> APPLIED AI</p>
-          <h1 id="hero-title">Building systems<br><em>that move work forward.</em></h1>
+          <h1 id="hero-title">Engineering teams,<br><em>measurably faster.</em></h1>
 
-          <div class="system-panel" aria-label="Schematic flow for a case-processing feature currently in development">
+          <div class="system-panel">
             <div class="panel-topline">
-              <span>CASE PROCESSING / CURRENT BUILD</span>
-              <span class="panel-state"><i></i> In progress</span>
+              <span id="impact-ledger-title">Measured impact · Siemens Healthineers</span>
+              <span class="panel-state"><i></i> In production</span>
             </div>
-            <div class="flow-route">
-              <div class="flow-step"><span>01 / CLIENT</span><b>Angular UI</b><small>Submit a case</small></div>
-              <span class="flow-arrow" aria-hidden="true">→</span>
-              <div class="flow-step flow-step-active"><span>02 / SERVICE</span><b>Go API</b><small>Validate · enqueue</small></div>
-              <span class="flow-arrow" aria-hidden="true">→</span>
-              <div class="flow-step"><span>03 / QUEUE</span><b>SQL-backed</b><small>Hold pending work</small></div>
-              <span class="flow-arrow" aria-hidden="true">→</span>
-              <div class="flow-step"><span>04 / WORKER</span><b>Process</b><small>Run on Kubernetes</small></div>
-            </div>
-            <p class="panel-caption">A schematic view of the feature flow · progress returns to the interface as work advances</p>
+            <dl class="impact-ledger" aria-labelledby="impact-ledger-title">
+              <div class="ledger-row">
+                <dt>Code review</dt>
+                <dd class="ledger-value">70% less time</dd>
+                <dd class="ledger-how">A Copilot review agent my whole team uses</dd>
+              </div>
+              <div class="ledger-row">
+                <dt>Defect analysis</dt>
+                <dd class="ledger-value">3× faster</dd>
+                <dd class="ledger-how">MCP tools that read the logs and draft the root-cause analysis</dd>
+              </div>
+              <div class="ledger-row">
+                <dt>Release time</dt>
+                <dd class="ledger-value">1 day <span class="arrow" aria-hidden="true">→</span><span class="visually-hidden"> to </span> 40 min</dd>
+                <dd class="ledger-how">Five Azure DevOps pipelines, through to Kubernetes</dd>
+              </div>
+              <div class="ledger-row">
+                <dt>Pipeline pass rate</dt>
+                <dd class="ledger-value">65% <span class="arrow" aria-hidden="true">→</span><span class="visually-hidden"> to </span> 95%+</dd>
+                <dd class="ledger-how">Seven classes of build and deploy failure, root-caused</dd>
+              </div>
+            </dl>
+            <p class="panel-caption">How each result was reached, and checked, is in the projects below.</p>
           </div>
 
           <p class="hero-name">Arvind Tatpudi</p>
-          <p class="hero-intro">I build healthcare software, applied AI tools, and backend systems—turning complex workflows into dependable, useful products.</p>
+          <p class="hero-intro">Senior software engineer at Siemens Healthineers, with six years in C#/.NET, Go and Angular. I build backend services, delivery pipelines and AI agents for engineering teams, and I measure whether they worked.</p>
 
           <div class="status-grid">
             <div class="status-tile">
-              <span class="status-label"><i class="status-dot status-dot-lilac"></i> EXPERIENCE</span>
+              <span class="status-label"><i class="status-dot status-dot-lilac"></i> Now</span>
               <b>Siemens Healthineers</b>
-              <small>Healthcare software · C# / .NET</small>
+              <small>Senior Software Developer · healthcare software</small>
             </div>
             <div class="status-tile">
-              <span class="status-label"><i class="status-dot status-dot-blue"></i> BUILDING</span>
-              <b>Case-processing feature</b>
-              <small>Go · Kubernetes · Helm · Docker</small>
+              <span class="status-label"><i class="status-dot status-dot-blue"></i> Open to</span>
+              <b>Backend, platform and applied-AI roles</b>
+              <small>UK and Europe · requires visa sponsorship</small>
             </div>
           </div>
 
           <div class="hero-actions">
-            <a class="button button-primary" href="#projects">Explore projects <span aria-hidden="true">↓</span></a>
+            <a class="button button-primary" href="#projects">See the work behind the numbers <span aria-hidden="true">↓</span></a>
             <a class="button button-secondary" href="#contact">Start a conversation <span aria-hidden="true">↗</span></a>
           </div>
         </div>
@@ -65,107 +77,159 @@
 
       <section class="work-section section shell" id="projects" aria-labelledby="projects-title">
         <div class="section-heading">
-          <div>
-            <p class="eyebrow">PROJECTS</p>
-            <h2 id="projects-title">Engineering work,<br><em>in practice.</em></h2>
-          </div>
-          <p class="section-aside">Explore selected work across healthcare software, application modernization, applied AI, developer tools, and workflow automation.</p>
+          <h2 id="projects-title">Work that moved<br><em>the numbers.</em></h2>
+          <p class="section-aside">Each project starts with its result, then shows how I built it and how the result was checked.</p>
         </div>
 
         <article class="case-study case-featured">
-          <div class="case-meta"><span>IN PROGRESS / BACKEND SYSTEMS</span><span class="status status-progress">Current build</span></div>
+          <div class="case-meta"><span>Siemens Healthineers · developer productivity</span><span class="status status-live">In daily use</span></div>
           <div class="case-grid">
             <div class="case-copy">
-              <h3>From case request<br>to <em>asynchronous work.</em></h3>
-              <p class="case-summary">Implementing a feature that takes a case from a web request through a queued workflow and background processing.</p>
+              <h3>Code review time,<br><em>cut by 70%.</em></h3>
+              <p class="case-summary">I built a GitHub Copilot review agent that checks every pull request against our written guidelines, and MCP-based tools that turn a failing system’s logs into a draft root-cause analysis. My whole team uses both every day.</p>
+              <dl class="impact-list">
+                <div><dt>Time spent on code review</dt><dd>70% less</dd></div>
+                <div><dt>Defect analysis</dt><dd>3× faster</dd></div>
+              </dl>
               <details class="case-details" (toggle)="syncDisclosure($event)">
-                <summary aria-expanded="false">Read the implementation path <span aria-hidden="true" data-disclosure-indicator>＋</span></summary>
+                <summary aria-expanded="false">How it works, and how we check it <span aria-hidden="true" data-disclosure-indicator>＋</span></summary>
                 <div class="details-body">
-                  <p>The web UI sends a case request to a Go API, which validates it and adds work to a SQL-backed queue. A background worker coordinates a processing host and an orchestration service; progress updates return to the interface through a streaming endpoint.</p>
-                  <p>Docker packages the application, while Kubernetes runs the service and Helm manages its deployment configuration.</p>
-                  <p class="truth-note">This feature is actively being implemented; no completion or production outcome is claimed.</p>
+                  <p>The review agent pulls each pull request through Azure DevOps MCP tools, reads every changed file in full and checks it against our written guidelines, plus a short playbook per repository. The playbooks hold what the agent can’t learn from the code, such as conventions that differ between repositories on purpose. Each finding names the file, line, broken rule, severity and a suggested fix, and a second agent applies the fixes the reviewer accepts.</p>
+                  <p>It may only flag what a written guideline or a clear security risk backs, it never posts without the reviewer’s confirmation, and every comment is tagged “AI reviewed”. Fixes must preserve behaviour and compile. The defect tools read event logs, product logs, crash dumps and call traces, find the responsible module and whether it’s ours, and draft an RCA with timeline, diagnosis, fix and performance impact, which the engineer confirms before changing code.</p>
+                  <p class="truth-note">These are internal tools, so product and system details are kept general.</p>
                 </div>
               </details>
             </div>
-            <div class="workflow-figure" aria-label="Schematic request lifecycle: Angular UI, Go API, SQL-backed queue, background worker, and Kubernetes deployment">
-              <div class="workflow-head"><span>REQUEST LIFECYCLE</span><span>SCHEMATIC</span></div>
-              <div class="workflow-node"><span class="node-type">CLIENT</span><b>Angular UI</b><small>Case submitted</small></div>
-              <div class="workflow-connector"><span></span><small>Authenticated request</small></div>
-              <div class="workflow-node node-active"><span class="node-type">API</span><b>Go service</b><small>Validate · enqueue</small></div>
-              <div class="workflow-connector"><span></span><small>SQL-backed queue</small></div>
-              <div class="workflow-node"><span class="node-type">WORKER</span><b>Background engine</b><small>Coordinate · process</small></div>
-              <div class="workflow-return"><span>Progress updates return to the UI as work advances</span><b aria-hidden="true">↶</b></div>
-              <div class="workflow-foot"><span>DEPLOYMENT</span><b>Docker · Helm · Kubernetes</b></div>
+            <div class="workflow-figure" aria-label="Schematic review loop: pull request, review agent, reviewer confirmation, then fix agent">
+              <div class="workflow-head"><span>Review loop</span><span>Schematic</span></div>
+              <div class="workflow-node"><span class="node-type">Input</span><b>Pull request</b><small>Changed files, read in full</small></div>
+              <div class="workflow-connector"><span></span><small>Guidelines + repository playbook</small></div>
+              <div class="workflow-node node-active"><span class="node-type">Agent</span><b>Review agent</b><small>Rule · severity · fix</small></div>
+              <div class="workflow-connector"><span></span><small>Reviewer confirms each comment</small></div>
+              <div class="workflow-node"><span class="node-type">Agent</span><b>Fix agent</b><small>Behaviour-preserving, compiled</small></div>
+              <div class="workflow-return"><span>Every comment it posts is tagged “AI reviewed”</span><b aria-hidden="true">↶</b></div>
+              <div class="workflow-foot"><span>Result</span><b>70% less time on code review</b></div>
             </div>
           </div>
-          <div class="tag-row"><span>Go</span><span>Kubernetes</span><span>Helm</span><span>Docker</span><span>Queued workflows</span><span>Service integration</span></div>
+          <div class="tag-row"><span>GitHub Copilot</span><span>MCP</span><span>Azure DevOps</span><span>C# / .NET</span><span>Prompt guardrails</span></div>
         </article>
 
         <div class="case-pair">
           <article class="case-study">
-            <div class="case-meta"><span>SIEMENS HEALTHINEERS · HEALTHCARE</span><span class="status status-live">Production experience</span></div>
-            <h3>Medical imaging<br>&amp; <em>printing.</em></h3>
-            <p class="case-summary">Developed healthcare-software features for imaging and printing workflows using C#/.NET, WPF, and Angular.</p>
+            <div class="case-meta"><span>Siemens Healthineers · delivery</span><span class="status status-live">Production</span></div>
+            <h3>Releases in 40 minutes,<br><em>not a day.</em></h3>
+            <p class="case-summary">I co-built five Azure DevOps pipelines that test, scan, package and deploy a software-distribution service to Kubernetes, then root-caused the failures that kept breaking them.</p>
+            <dl class="impact-list">
+              <div><dt>Release time</dt><dd>1 day <span class="arrow" aria-hidden="true">→</span><span class="visually-hidden"> to </span> 40 min</dd></div>
+              <div><dt>Pipeline pass rate</dt><dd>65% <span class="arrow" aria-hidden="true">→</span><span class="visually-hidden"> to </span> 95%+</dd></div>
+              <div><dt>SonarQube security rating</dt><dd>D <span class="arrow" aria-hidden="true">→</span><span class="visually-hidden"> to </span> A</dd></div>
+            </dl>
             <details class="case-details" (toggle)="syncDisclosure($event)">
-              <summary aria-expanded="false">What I worked on <span aria-hidden="true" data-disclosure-indicator>＋</span></summary>
+              <summary aria-expanded="false">What changed <span aria-hidden="true" data-disclosure-indicator>＋</span></summary>
               <div class="details-body">
-                <p>Implemented print views and workflows, prototyped client-side printing, and added independent and relative zoom controls for medical-image segments. Also contributed to multi-monitor support.</p>
-                <p>Contributed to a production healthcare device-data integration and developed unit, integration, and end-to-end tests across projects.</p>
+                <p>The pipelines cover Angular and .NET builds, unit and Playwright tests, SonarQube quality gates, versioned Docker images, Azure provisioning, database migrations, Kubernetes deployment and publishing the API to Azure API Management.</p>
+                <p>I traced seven classes of build and deploy failure, from private npm feeds to EF Core migrations and Azure permissions, and documented each fix in a handover guide. Running the container as non-root met the cluster’s security policy, and fixing a critical cross-window messaging issue lifted the security rating.</p>
               </div>
             </details>
-            <div class="tag-row"><span>C#</span><span>.NET</span><span>WPF</span><span>Angular</span><span>Medical imaging</span></div>
+            <div class="tag-row"><span>Azure DevOps</span><span>Docker</span><span>Kubernetes</span><span>SonarQube</span><span>Playwright</span></div>
           </article>
 
-          <article class="case-study case-ai">
-            <div class="case-meta"><span>HAPPIEST MINDS · APPLIED AI</span><span class="status status-live">Built</span></div>
-            <h3>Knowledge,<br><em>made findable.</em></h3>
-            <p class="case-summary">An enterprise RAG assistant that combines retrieval and semantic search to help people find relevant information in internal knowledge sources.</p>
+          <article class="case-study">
+            <div class="case-meta"><span>Siemens Healthineers · healthcare backend</span><span class="status status-live">Production</span></div>
+            <h3>Device data,<br><em>reliably in sync.</em></h3>
+            <p class="case-summary">I develop and support a production C#/.NET agent that keeps thousands of installed medical devices current in a cloud registry, and I tuned the data layer behind the software-distribution service.</p>
+            <dl class="impact-list">
+              <div><dt>Queued device updates delivered</dt><dd>99.5%+</dd></div>
+              <div><dt>Key clearance queries</dt><dd>10× faster</dd></div>
+              <div><dt>Batch writes</dt><dd>20× faster</dd></div>
+            </dl>
             <details class="case-details" (toggle)="syncDisclosure($event)">
-              <summary aria-expanded="false">What the system brings together <span aria-hidden="true" data-disclosure-indicator>＋</span></summary>
+              <summary aria-expanded="false">How <span aria-hidden="true" data-disclosure-indicator>＋</span></summary>
               <div class="details-body">
-                <p>The solution uses embeddings and a vector database to retrieve context for responses. The experience is designed around grounded answers rather than a standalone chatbot prompt.</p>
-                <p>Specific evaluation results, adoption figures, and public links are intentionally omitted until verified and approved for sharing.</p>
+                <p>The agent collects device and subsystem data, queues registry updates and syncs them to the cloud over authenticated REST APIs. On the data side, composite indexes and normalised keys sped up clearance queries, and a single binary-COPY upsert replaced per-row writes.</p>
               </div>
             </details>
-            <div class="tag-row"><span>RAG</span><span>Semantic search</span><span>Embeddings</span><span>Vector database</span></div>
+            <div class="tag-row"><span>C# / .NET</span><span>REST APIs</span><span>PostgreSQL</span><span>Npgsql</span></div>
+          </article>
+        </div>
+
+        <div class="case-pair">
+          <article class="case-study case-ai">
+            <div class="case-meta"><span>Personal project · public</span><span class="status status-live">On GitHub</span></div>
+            <h3>Answers that<br><em>show their sources.</em></h3>
+            <p class="case-summary">A local-first RAG app that answers only from your own documents, cites the page or section behind each statement, and declines when the evidence isn’t there. I built it in two weeks with the GitHub Copilot app, with every change gated by CI.</p>
+            <dl class="impact-list">
+              <div><dt>Unanswerable questions declined</dt><dd>12 of 12</dd></div>
+              <div><dt>Answerable questions with every fact found</dt><dd>52 of 54</dd></div>
+              <div><dt>Automated tests in CI</dt><dd>950+</dd></div>
+            </dl>
+            <a class="case-link" href="https://github.com/tatpudiarvind/evidence-backed-knowledge-assistant" target="_blank" rel="noopener noreferrer">Read the code and evaluation <span aria-hidden="true">↗</span></a>
+            <div class="tag-row"><span>Python</span><span>FastAPI</span><span>React</span><span>PostgreSQL / pgvector</span><span>GitHub Actions</span></div>
+          </article>
+
+          <article class="case-study">
+            <div class="case-meta"><span>Happiest Minds · applied AI</span><span class="status status-live">Delivered</span></div>
+            <h3>Knowledge,<br><em>made findable.</em></h3>
+            <p class="case-summary">An enterprise RAG assistant over 580 administrative and legal documents, built on document ingestion and chunking, embeddings and vector search, so people get grounded answers instead of searching by hand.</p>
+            <dl class="impact-list">
+              <div><dt>Time to find an answer</dt><dd>15 min <span class="arrow" aria-hidden="true">→</span><span class="visually-hidden"> to </span> 10 s</dd></div>
+              <div><dt>People using it</dt><dd>1,500</dd></div>
+            </dl>
+            <div class="tag-row"><span>RAG</span><span>Embeddings</span><span>Vector search</span><span>Document processing</span></div>
           </article>
         </div>
 
         <div class="case-pair">
           <article class="case-study">
-            <div class="case-meta"><span>HAPPIEST MINDS · APPLICATION MODERNIZATION</span><span class="status status-live">Delivered</span></div>
-            <h3>From desktop<br>to <em>web.</em></h3>
-            <p class="case-summary">Migrated a Windows application to a web-based platform, bringing its workflows to an Angular interface backed by ASP.NET Web API.</p>
+            <div class="case-meta"><span>Happiest Minds · modernization</span><span class="status status-live">Delivered</span></div>
+            <h3>From desktop<br><em>to web.</em></h3>
+            <p class="case-summary">I moved a Windows desktop application to the browser, migrating 90% of its modules to Angular 13 and ASP.NET Web API, so a release reaches every user on the day it ships.</p>
+            <dl class="impact-list">
+              <div><dt>Release rollout</dt><dd>2 weeks <span class="arrow" aria-hidden="true">→</span><span class="visually-hidden"> to </span> same day</dd></div>
+              <div><dt>Users moved to the web</dt><dd>10,000+</dd></div>
+            </dl>
             <div class="tag-row"><span>Angular 13</span><span>ASP.NET Web API</span><span>WPF</span><span>MVVM</span></div>
           </article>
 
           <article class="case-study">
-            <div class="case-meta"><span>OPTION MATRIX · WORKFLOW AUTOMATION</span><span class="status status-live">Delivered</span></div>
-            <h3>Audit and response<br><em>workflows.</em></h3>
-            <p class="case-summary">Built audit and response-management workflows for a career-consulting and immigration business, including mobile checklists and scheduled ticketing.</p>
-            <div class="tag-row"><span>C#</span><span>ASP.NET Web API</span><span>SQL Server</span><span>Angular</span><span>IIS</span></div>
+            <div class="case-meta"><span>Option Matrix · workflow automation</span><span class="status status-live">Delivered</span></div>
+            <h3>Audits in hours,<br><em>not days.</em></h3>
+            <p class="case-summary">An end-to-end audit platform for an overseas career-consulting and immigration firm: mobile checklists and Q&amp;A, plus automatic tickets and alerts when an audit turns up an exception.</p>
+            <dl class="impact-list">
+              <div><dt>Audit turnaround</dt><dd>4 days <span class="arrow" aria-hidden="true">→</span><span class="visually-hidden"> to </span> 6 h</dd></div>
+              <div><dt>Audit rework</dt><dd>30% less</dd></div>
+              <div><dt>Response to exceptions</dt><dd>3 days <span class="arrow" aria-hidden="true">→</span><span class="visually-hidden"> to </span> same day</dd></div>
+            </dl>
+            <div class="tag-row"><span>C#</span><span>ASP.NET Web API</span><span>SQL Server</span><span>Angular</span><span>SendGrid</span></div>
           </article>
         </div>
 
         <article class="case-study case-wide">
-          <div class="case-meta"><span>SIEMENS HEALTHINEERS · DEVELOPER EXPERIENCE</span><span class="status status-live">Built</span></div>
+          <div class="case-meta"><span>Siemens Healthineers · backend systems</span><span class="status status-progress">In progress</span></div>
           <div class="case-wide-grid">
-            <h3>Tools for useful<br><em>AI-assisted work.</em></h3>
+            <h3>From case request<br>to <em>asynchronous work.</em></h3>
             <div>
-              <p class="case-summary">Developed MCP-based defect-analysis and review agents using semantic search, prompt guardrails, and tool-based workflows to assist engineering investigations and code reviews.</p>
-              <div class="tag-row"><span>MCP</span><span>AI agents</span><span>Tool contracts</span><span>Prompt guardrails</span></div>
+              <p class="case-summary">I’m building a case-processing feature end to end. The Angular UI submits a case, a Go API validates it and queues it in SQL, and a background worker hands it to the processing service while progress streams back to the screen.</p>
+              <p class="case-summary truth-note">It isn’t finished, so I’m not claiming a result yet.</p>
             </div>
           </div>
+          <div class="flow-route" aria-label="Schematic flow: Angular UI, Go API, SQL-backed queue, then a worker on Kubernetes">
+            <div class="flow-step"><span>01 / Client</span><b>Angular UI</b><small>Submit a case</small></div>
+            <span class="flow-arrow" aria-hidden="true">→</span>
+            <div class="flow-step flow-step-active"><span>02 / Service</span><b>Go API</b><small>Validate · enqueue</small></div>
+            <span class="flow-arrow" aria-hidden="true">→</span>
+            <div class="flow-step"><span>03 / Queue</span><b>SQL-backed</b><small>Hold pending work</small></div>
+            <span class="flow-arrow" aria-hidden="true">→</span>
+            <div class="flow-step"><span>04 / Worker</span><b>Process</b><small>Run on Kubernetes</small></div>
+          </div>
+          <div class="tag-row"><span>Go</span><span>Kubernetes</span><span>Helm</span><span>Docker</span><span>SQL-backed queue</span><span>Server-sent events</span></div>
         </article>
       </section>
 
       <section class="experience-section section shell" id="experience" aria-labelledby="experience-title">
         <div class="section-heading">
-          <div>
-            <p class="eyebrow">EXPERIENCE</p>
-            <h2 id="experience-title">Built for<br><em>real-world workflows.</em></h2>
-          </div>
-          <p class="section-aside">Experience across healthcare software, application modernization, and workflow automation.</p>
+          <h2 id="experience-title">Six years,<br><em>measured in results.</em></h2>
+          <p class="section-aside">Healthcare software, application modernization and workflow automation, across three companies.</p>
         </div>
         <div
           class="experience-carousel"
@@ -237,44 +301,38 @@
 
       <section class="education-section section shell" id="education" aria-labelledby="education-title">
         <div class="section-heading">
-          <div>
-            <p class="eyebrow">EDUCATION</p>
-            <h2 id="education-title">Learning that<br><em>shapes the work.</em></h2>
-          </div>
+          <h2 id="education-title">Learning that<br><em>shapes the work.</em></h2>
           <p class="section-aside">A foundation in mechanical engineering, graduating in 2019.</p>
         </div>
         <div class="education-entry">
           <span class="education-entry-label">2019</span>
-          <p><strong>Bachelor of Engineering Technology, Mechanical Engineering</strong><br>Shri ShankaraCharya Group of Institutions, Bhilai</p>
+          <p><strong>Bachelor of Engineering Technology, Mechanical Engineering</strong><br>Shri Shankaracharya Group of Institutions, Bhilai</p>
         </div>
       </section>
 
       <section class="toolkit-section section shell" id="skills" aria-labelledby="skills-title">
         <div class="section-heading">
-          <div>
-            <p class="eyebrow">TOOLKIT</p>
-            <h2 id="skills-title">The tools follow<br><em>the problem.</em></h2>
-          </div>
-          <p class="section-aside">A practical mix of application engineering, service integration, AI, and delivery.</p>
+          <h2 id="skills-title">The tools follow<br><em>the problem.</em></h2>
+          <p class="section-aside">What I use to build services, ship them and put agents to work.</p>
         </div>
         <div class="toolkit-list">
-          <div><h3>Application development</h3><p>C# · .NET · ASP.NET Core / Web API · Angular · TypeScript · WPF · MVVM</p></div>
-          <div><h3>Services &amp; data</h3><p>REST APIs · Authenticated integrations · SQL Server · JSON · Queued workflows</p></div>
-          <div><h3>Applied AI</h3><p>RAG · Semantic search · Embeddings · Vector databases · MCP · Prompt guardrails</p></div>
-          <div><h3>Platform &amp; delivery</h3><p>Go · Kubernetes · Helm · Docker · AWS · Azure · IIS · Git · CI/CD · Agile/Scrum</p></div>
+          <div><h3>Languages and frameworks</h3><p>C# · .NET · ASP.NET Core / Web API · Python · FastAPI · Go · TypeScript · Angular · React · WPF</p></div>
+          <div><h3>Services and data</h3><p>REST APIs · OpenAPI · SQL Server · PostgreSQL · pgvector · Entity Framework Core · SQL-backed queues</p></div>
+          <div><h3>Agents and applied AI</h3><p>GitHub Copilot agents · MCP · RAG · Embeddings · Semantic and vector search · Prompt guardrails</p></div>
+          <div><h3>Platform and delivery</h3><p>Azure DevOps · Azure (API Management, Key Vault) · Docker · Kubernetes · Helm · GitHub Actions · SonarQube · Playwright</p></div>
         </div>
-        <p class="toolkit-note">Go, Kubernetes, Helm, and Docker are part of my current implementation work; they are distinguished from longer-established production experience.</p>
+        <p class="toolkit-note">Go and Helm are part of my current build; everything else here is in production use or in my public project.</p>
       </section>
 
       <section class="contact-section shell" id="contact" aria-labelledby="contact-title">
         <div>
-          <p class="eyebrow">GET IN TOUCH</p>
           <h2 id="contact-title">Let’s build<br>something <em>dependable.</em></h2>
-          <p>I'm interested in thoughtful engineering work across backend systems, healthcare software, and applied AI.</p>
+          <p>I’m looking for backend, platform or applied-AI roles in the UK and Europe, on teams that want to ship faster without lowering the bar.</p>
         </div>
         <div class="contact-card">
-          <p class="contact-label">CONTACT DETAILS</p>
+          <p class="contact-label">Contact details</p>
           <p><a href="mailto:tatpudiarvind@gmail.com">tatpudiarvind@gmail.com</a></p>
+          <p class="contact-note">Based in Bengaluru, India. Requires visa sponsorship: UK Skilled Worker visa or EU Blue Card.</p>
           <div class="profile-links" aria-label="Professional profile links">
             <a href="https://www.linkedin.com/in/arvind-tatpudi-071137120" target="_blank" rel="noopener noreferrer"><span>LinkedIn</span><span>View profile ↗</span></a>
             <a href="https://github.com/tatpudiarvind" target="_blank" rel="noopener noreferrer"><span>GitHub</span><span>View profile ↗</span></a>

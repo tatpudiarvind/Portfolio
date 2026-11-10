@@ -16,7 +16,7 @@ Present Arvind's software engineering experience, selected projects, technical s
 
 ## Positioning
 
-An engineer's portfolio centered on explainable work: healthcare software, applied AI, and backend/platform engineering, with project narratives that connect user needs to implementation and trade-offs.
+An engineer's portfolio centered on measured, explainable work: healthcare software, applied AI and developer agents, and backend/platform engineering, with project narratives that lead with the result, then connect it to implementation and trade-offs.
 
 ## Operating Context
 
@@ -26,18 +26,19 @@ Visitors may arrive from job applications or professional profiles and scan the 
 
 - Confirmed experience includes production C#/.NET healthcare software, authenticated APIs, WPF/UI work, testing, RAG and semantic search, MCP-based developer tools, and current implementation work in Go, Kubernetes, Helm, and Docker.
 - The Case Controller feature is in progress; present it as current work, not a completed delivery.
-- Employment titles, employers, dates, experience, project descriptions, education, and contact links are sourced from the resume supplied for this portfolio update.
-- Do not invent public project links or quantitative outcomes.
+- Employment titles, employers, dates, experience, project descriptions, outcomes, education, and contact links are sourced from Arvind's CV (v4, November 2026).
+- Use only outcomes Arvind supplied; do not invent public project links or quantitative outcomes.
 - No permission to reuse another portfolio's source assets has been provided. Do not copy them.
-- Keep Siemens device-data implementation details generalized; do not disclose confidential product, customer, or system information.
+- Keep Siemens device-data implementation details generalized; do not disclose confidential product, customer, or system information. Arvind decided (10 November 2026) that the public site shows Siemens outcome numbers but keeps internal product and system names and Siemens counts general.
 
 ## Evidence on Hand
 
-The supplied resume confirms experience at Siemens Healthineers, Happiest Minds Technologies, and Option Matrix Infotech; selected work includes healthcare device and imaging software, a Windows-to-web migration, an enterprise knowledge assistant, workflow automation, MCP-based developer tools, and an in-progress case-processing feature. It also supplies the education record and LinkedIn, GitHub, and email details. Approved screenshots, public project URLs, and measurable outcomes remain to be supplied or verified.
+Arvind's CV (v4) confirms experience at Siemens Healthineers, Happiest Minds Technologies, and Option Matrix Infotech, with measured outcomes for each role: a Copilot PR review agent and MCP-based defect analysis tools (70% less review time, 3× faster defect analysis), delivery pipelines (release time 1 day → 40 min, pass rate 65% → 95%+, security rating D → A), device-registry sync (99.5%+ of updates delivered), data-layer tuning (10× faster queries, 20× faster batch writes), an enterprise RAG assistant (15 min → 10 s), a Windows-to-web migration (2 weeks → same-day rollouts), and audit automation (4 days → 6 h). The public evidence-backed knowledge assistant repository supplies measured evaluation and test figures. It also supplies the education record, right-to-work status, and LinkedIn, GitHub, and email details. Approved screenshots remain to be supplied.
 
 ## Product Principles
 
 - Make claims traceable to real work.
+- Lead with the result, then say how it was achieved and checked.
 - Explain engineering decisions, not just list tools.
 - Distinguish shipped experience from work in progress.
 - Keep the visitor's path to evidence and contact clear.

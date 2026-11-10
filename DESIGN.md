@@ -71,6 +71,12 @@ typography:
     title-case-wide: "3.8rem"
     title-contact: "5.2rem"
     title-display-maximum: "5.5rem"
+    body-control: "0.7rem"
+    metric-card: "1.2rem"
+    metric-card-mobile: "1.05rem"
+    metric-mobile: "1.25rem"
+    metric-min: "1.35rem"
+    metric-max: "1.7rem"
   fluid:
     hero-mobile: "clamp(3rem, 12.2vw, 4.3rem)"
     section-mobile: "clamp(2.7rem, 11.5vw, 3.8rem)"
@@ -79,6 +85,7 @@ typography:
     case-wide: "clamp(2.2rem, 3.8vw, 3.4rem)"
     case-title: "clamp(2.25rem, 4vw, 3.8rem)"
     contact: "clamp(3rem, 6vw, 5.2rem)"
+    metric: "clamp(1.35rem, 2.4vw, 1.7rem)"
 components:
   primary-button:
     backgroundColor: "{colors.foreground}"
@@ -93,7 +100,7 @@ components:
 
 **Creative North Star: "Systems in the spotlight"**
 
-This portfolio places the engineering work, not a profile card, at the center of the first impression. A near-black field, sparse star points, and narrow hatched edges create a quiet technical atmosphere; an original case-flow diagram provides the first concrete proof. Project stories then open progressively, with the in-progress backend work clearly distinguished from completed experience.
+This portfolio places the engineering work, not a profile card, at the center of the first impression. A near-black field, sparse star points, and narrow hatched edges create a quiet technical atmosphere; a before-and-after impact ledger provides the first concrete proof. Project stories lead with their measured result, then open progressively into how the work was built and checked, with the in-progress backend work clearly distinguished from completed experience.
 
 The page borrows only broad UX cues from the cited public reference: a centered introduction, strong display typography, concise current-work context, and an evidence-led scroll. Its content, code, diagrams, and visual details are original.
 
@@ -119,21 +126,21 @@ The dark neutral field owns most of the page. Lavender and blue identify selecte
 
 ## Typography
 
-- **Display:** Newsreader, Georgia fallback; editorial, slightly condensed-feeling display lines with modest negative tracking.
+- **Display:** Newsreader, Georgia fallback; editorial, slightly condensed-feeling display lines with modest negative tracking. Measured results (the "after" values in the impact ledger and impact lists) also use Newsreader, at the metric steps, so numbers read as evidence rather than as decoration.
 - **Reading:** Manrope, Segoe UI fallback; concise, legible copy with generous leading.
 - **Metadata:** DM Mono, Consolas fallback; only for actual labels, statuses, and technical identifiers.
 
-Display lines use balanced wrapping. Body copy stays around 65 characters per line on desktop and scales down on mobile. Compact monospace text is reserved for short labels, not paragraph copy.
+Display lines use balanced wrapping. Body copy stays around 65 characters per line on desktop and scales down on mobile. Compact monospace text is reserved for short labels, not paragraph copy. Headings carry their own weight: no kicker or eyebrow labels above them.
 
 ## Layout and behavior
 
-- Centered opening narrative at a maximum width of 850px, with the current case-flow diagram as the hero's proof point.
-- A compact two-column status strip and two clear calls to action follow the introduction.
-- Selected projects connect the featured in-progress case-processing build with verified healthcare, application-modernization, applied-AI, workflow-automation, and developer-tool work.
-- Experience presents the three verified employers in a fixed-width, keyboard-operable carousel with previous/next controls, direct employer selectors, and optional three-second rotation; rotation pauses on hover or keyboard interaction and remains off for reduced-motion preferences. Education, email, LinkedIn, and GitHub use the supplied resume details.
+- Centered opening narrative at a maximum width of 850px, with a before-and-after impact ledger as the hero's proof point.
+- A compact two-column status strip (current role; roles and locations sought, including the sponsorship need) and two clear calls to action follow the introduction.
+- Projects lead with measured results: a featured agent-first code review card, then paired cards for delivery pipelines, healthcare backend, the public RAG project, the enterprise knowledge assistant, the desktop-to-web migration, and audit automation, and finally the in-progress case-processing build with its schematic flow.
+- Experience presents the three verified employers in a fixed-width, keyboard-operable carousel with previous/next controls and optional three-second rotation; rotation pauses on hover or keyboard interaction and remains off for reduced-motion preferences. Each bullet states its result first. Education, email, LinkedIn, GitHub, and the right-to-work note use the supplied resume details.
 - Toolkit and contact use restrained dividers and open spacing.
 - Hatched side rails and a sparse, static point field frame the canvas without obscuring content.
-- At 850px the project diagram stacks; at 600px the hero flow and status details reflow to compact mobile layouts.
+- At 850px the project diagram stacks; at 600px the ledger rows, case flow, and status details reflow to compact mobile layouts.
 - All content is visible by default; project details use native disclosure controls. Focus indicators and reduced-motion preferences are respected.
 
 ## Components and states
@@ -142,11 +149,15 @@ Display lines use balanced wrapping. Body copy stays around 65 characters per li
 - **Secondary action:** transparent surface with a clear border and lavender directional cue.
 - **Project surfaces:** square-cornered dark panels with subtle rule contrast; no nesting or generic icon tiles.
 - **Status:** mint for completed/production experience and lavender for active work; never imply the current build is shipped.
-- **Case-flow figure:** a schematic sequence of client, API, queue, and worker, with a return path for progress updates. It is labeled schematic rather than presented as a product screenshot.
+- **Impact ledger:** rows inside the hero panel, each with a mono label, a Newsreader result, and one line on how it was achieved. Before-and-after values use a lavender arrow that is hidden from screen readers, with "to" read instead.
+- **Impact list:** the same rows in compact form inside project cards: label on the left, result on the right, separated by rules.
+- **Review-loop figure:** a schematic of pull request, review agent, reviewer confirmation, and fix agent, labeled schematic.
+- **Case-flow figure:** a schematic sequence of client, API, queue, and worker inside the in-progress card. It is labeled schematic rather than presented as a product screenshot.
 
 ## Content constraints
 
-- Do not invent project outcomes, dates, employment details, customer names, public links, or metrics.
+- Use only outcomes Arvind supplied (CV v4, November 2026). Do not invent project outcomes, dates, employment details, customer names, public links, or metrics.
+- On this public site, Siemens work shows outcome numbers but keeps internal product and system names and Siemens counts (devices, engineers, rows) general.
 - Keep the Go/Kubernetes feature marked as in progress.
 - Keep internal healthcare architecture and data generalized.
 - Do not reuse the reference site's source code, copy, photos, or assets.
