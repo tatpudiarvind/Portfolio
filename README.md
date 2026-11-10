@@ -6,9 +6,12 @@ Live site: https://tatpudiarvind.github.io/Portfolio/
 
 ## What's on the page
 
-- Hero and about, with positioning drawn from the resume
-- Experience carousel: Siemens Healthineers, Happiest Minds and Option Matrix. It auto-advances every 3 seconds, has a Pause/Resume button and previous/next arrows, and pauses on hover, focus, hidden tab or reduced motion. The frame size stays fixed across slides.
-- Projects (native disclosures; the in-progress project is labeled as such), Education, and Contact with LinkedIn and GitHub links
+- Hero with a before-and-after impact ledger of measured results, plus current role and the roles, locations and sponsorship need
+- Projects that each lead with their result (native disclosures for how it was built and checked; the in-progress project is labeled as such), including the public evidence-backed knowledge assistant
+- Experience carousel: Siemens Healthineers, Happiest Minds and Option Matrix, with result-first bullets. It auto-advances every 3 seconds, has a Pause/Resume button and previous/next arrows, and pauses on hover, focus, hidden tab or reduced motion. The frame size stays fixed across slides.
+- Education, Toolkit, and Contact with LinkedIn and GitHub links and a right-to-work note
+
+Content follows Arvind's CV (v4, November 2026). On this public site, Siemens work shows outcome numbers but keeps internal product and system names and Siemens counts general.
 
 ## Project structure
 
