@@ -7,7 +7,7 @@ This is an original implementation inspired by the live portfolio's centered int
 - Use a near-black, low-luminance visual system with restrained lavender and blue signals.
 - Center the opening statement and place a before-and-after impact ledger of measured results directly below it.
 - Show the current role and the roles, locations, and sponsorship need separately, then provide direct paths to selected work and contact.
-- Lead every project with its measured result: agent-first code review and defect analysis, delivery pipelines, healthcare backend, the public evidence-backed knowledge assistant, the enterprise knowledge assistant, the desktop-to-web migration, and audit automation, followed by the in-progress case-processing build.
+- Lead every project with its result, measured wherever a measurement exists: agent-first code review and defect analysis, delivery pipelines (including the controlled-rollout design), test automation, healthcare backend, medical imaging, the public evidence-backed knowledge assistant, the enterprise knowledge assistant, the desktop-to-web migration, and audit automation, followed by the in-progress case-processing build.
 - Present verified Siemens Healthineers, Happiest Minds Technologies, and Option Matrix Infotech roles in an accessible carousel, with result-first bullets from CV v4.
 - Make Projects and Education directly discoverable from the main navigation and show the verified degree information.
 - Preserve responsive layouts, semantic structure, keyboard focus, native disclosures, and reduced-motion support.

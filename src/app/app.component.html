@@ -129,11 +129,26 @@
               <div class="details-body">
                 <p>The pipelines cover Angular and .NET builds, unit and Playwright tests, SonarQube quality gates, versioned Docker images, Azure provisioning, database migrations, Kubernetes deployment and publishing the API to Azure API Management.</p>
                 <p>I traced seven classes of build and deploy failure, from private npm feeds to EF Core migrations and Azure permissions, and documented each fix in a handover guide. Running the container as non-root met the cluster’s security policy, and fixing a critical cross-window messaging issue lifted the security rating.</p>
+                <p>I also designed the service’s controlled-rollout page and its API contract, so service engineers can pilot a new version with chosen customers before it goes out widely.</p>
               </div>
             </details>
             <div class="tag-row"><span>Azure DevOps</span><span>Docker</span><span>Kubernetes</span><span>SonarQube</span><span>Playwright</span></div>
           </article>
 
+          <article class="case-study">
+            <div class="case-meta"><span>Siemens Healthineers · quality</span><span class="status status-live">Delivered</span></div>
+            <h3>Manual testing,<br><em>93% automated.</em></h3>
+            <p class="case-summary">I turned most of our manual test cases for key workflows into NUnit, integration and end-to-end tests, so a release no longer waits on a day of regression checking.</p>
+            <dl class="impact-list">
+              <div><dt>Manual test cases automated</dt><dd>93%</dd></div>
+              <div><dt>Regression testing per release</dt><dd>1 day <span class="arrow" aria-hidden="true">→</span><span class="visually-hidden"> to </span> 1 h</dd></div>
+              <div><dt>New-code coverage</dt><dd>90%+</dd></div>
+            </dl>
+            <div class="tag-row"><span>NUnit</span><span>Integration tests</span><span>End-to-end tests</span><span>SonarQube</span></div>
+          </article>
+        </div>
+
+        <div class="case-pair">
           <article class="case-study">
             <div class="case-meta"><span>Siemens Healthineers · healthcare backend</span><span class="status status-live">Production</span></div>
             <h3>Device data,<br><em>reliably in sync.</em></h3>
@@ -150,6 +165,13 @@
               </div>
             </details>
             <div class="tag-row"><span>C# / .NET</span><span>REST APIs</span><span>PostgreSQL</span><span>Npgsql</span></div>
+          </article>
+
+          <article class="case-study">
+            <div class="case-meta"><span>Siemens Healthineers · medical imaging</span><span class="status status-live">Delivered</span></div>
+            <h3>Clearer views of<br><em>medical images.</em></h3>
+            <p class="case-summary">I delivered independent and relative zoom, and windowing, across single and multi-segment DICOM selections, plus print workflows that follow the imaging platform’s UI standards, in C#, WPF and Angular. I also contributed to multi-monitor support.</p>
+            <div class="tag-row"><span>C# / .NET</span><span>WPF</span><span>Angular</span><span>DICOM</span></div>
           </article>
         </div>
 
@@ -319,7 +341,8 @@
           <div><h3>Languages and frameworks</h3><p>C# · .NET · ASP.NET Core / Web API · Python · FastAPI · Go · TypeScript · Angular · React · WPF</p></div>
           <div><h3>Services and data</h3><p>REST APIs · OpenAPI · SQL Server · PostgreSQL · pgvector · Entity Framework Core · SQL-backed queues</p></div>
           <div><h3>Agents and applied AI</h3><p>GitHub Copilot agents · MCP · RAG · Embeddings · Semantic and vector search · Prompt guardrails</p></div>
-          <div><h3>Platform and delivery</h3><p>Azure DevOps · Azure (API Management, Key Vault) · Docker · Kubernetes · Helm · GitHub Actions · SonarQube · Playwright</p></div>
+          <div><h3>Testing and quality</h3><p>NUnit · pytest · Vitest · Playwright · SonarQube · Ruff · mypy · ESLint</p></div>
+          <div><h3>Platform and delivery</h3><p>Azure DevOps · Azure (API Management, Key Vault) · Docker · Kubernetes · Helm · GitHub Actions</p></div>
         </div>
         <p class="toolkit-note">Go and Helm are part of my current build; everything else here is in production use or in my public project.</p>
       </section>

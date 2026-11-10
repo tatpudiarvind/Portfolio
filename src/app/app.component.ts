@@ -19,9 +19,10 @@ export class AppComponent implements OnInit, OnDestroy {
         "Builds backend services, delivery pipelines and AI developer tools for healthcare software.",
       responsibilities: [
         "Cut code review time by 70% and made defect analysis three times faster for my team, with a Copilot review agent and MCP-based defect analysis tools.",
-        "Shortened release time for a software-distribution service from a day to 40 minutes by co-building five Azure DevOps pipelines through to Kubernetes.",
-        "Raised pipeline pass rate from 65% to 95%+ by root-causing seven classes of build and deploy failure, and lifted the SonarQube security rating from D to A.",
+        "Shortened release time for a software-distribution service from a day to 40 minutes by co-building five Azure DevOps pipelines through to Kubernetes, and raised their pass rate from 65% to 95%+ by root-causing seven classes of failure.",
+        "Automated 93% of manual test cases for key workflows, cutting regression testing from a day to an hour per release with new-code coverage at 90%+.",
         "Keep thousands of medical devices current in a cloud registry, delivering 99.5%+ of queued updates, and made key queries 10× faster.",
+        "Delivered zoom, windowing and print workflows for medical imaging in C#, WPF and Angular, and contributed to multi-monitor support.",
         "Building a case-processing feature end to end in Go on Kubernetes (in progress).",
       ],
     },
