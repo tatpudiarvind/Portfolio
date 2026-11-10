@@ -25,7 +25,7 @@ Visitors may arrive from job applications or professional profiles and scan the 
 ## Capabilities and Constraints
 
 - Confirmed experience includes production C#/.NET healthcare software, authenticated APIs, WPF/UI work, testing, RAG and semantic search, MCP-based developer tools, and current implementation work in Go, Kubernetes, Helm, and Docker.
-- The Case Controller feature is in progress; present it as current work, not a completed delivery.
+- The case-processing feature is in progress; present it as current work, not a completed delivery.
 - Employment titles, employers, dates, experience, project descriptions, outcomes, education, and contact links are sourced from Arvind's CV (v4, November 2026).
 - Use only outcomes Arvind supplied; do not invent public project links or quantitative outcomes.
 - No permission to reuse another portfolio's source assets has been provided. Do not copy them.
