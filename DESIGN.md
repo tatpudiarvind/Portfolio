@@ -136,7 +136,7 @@ Display lines use balanced wrapping. Body copy stays around 65 characters per li
 
 - Centered opening narrative at a maximum width of 850px, with a before-and-after impact ledger as the hero's proof point.
 - A compact two-column status strip (current role; roles and locations sought, including the sponsorship need) and two clear calls to action follow the introduction.
-- Projects lead with measured results: a featured agent-first code review card, then paired cards for delivery pipelines, healthcare backend, the public RAG project, the enterprise knowledge assistant, the desktop-to-web migration, and audit automation, and finally the in-progress case-processing build with its schematic flow.
+- Projects lead with their result, measured wherever a measurement exists: a featured agent-first code review card, then paired cards for delivery pipelines and test automation, healthcare backend and medical imaging, the public RAG project and the enterprise knowledge assistant, and the desktop-to-web migration and audit automation, and finally the in-progress case-processing build with its schematic flow. The imaging card states its user benefit without a number, because none was measured.
 - Experience presents the three verified employers in a fixed-width, keyboard-operable carousel with previous/next controls and optional three-second rotation; rotation pauses on hover or keyboard interaction and remains off for reduced-motion preferences. Each bullet states its result first. Education, email, LinkedIn, GitHub, and the right-to-work note use the supplied resume details.
 - Toolkit and contact use restrained dividers and open spacing.
 - Hatched side rails and a sparse, static point field frame the canvas without obscuring content.
